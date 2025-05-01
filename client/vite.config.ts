@@ -7,5 +7,6 @@ export default defineConfig({
     port: 3000,
     host: true,
   },
+  base: "/symph-take-home/",
   plugins: [react()],
 });
