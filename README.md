@@ -34,9 +34,7 @@
   - [Contributing Guidelines](#contributing-guidelines)
   - [Support and Contact](#support-and-contact)
   <!--toc:end-->
----
-permalink: /index.html
----
+
 ## Table of Contents
 
 - [Overview](#overview)
