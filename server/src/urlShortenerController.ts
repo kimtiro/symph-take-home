@@ -72,14 +72,14 @@ export const redirectUrl = async (req: Request, res: Response): Promise<void> =>
 
     if (!shortenedUrl) {
       // Redirect to the frontend error page for "URL not found"
-      res.redirect(`http://localhost:3000/error?message=This URL does not exist.`);
+      res.redirect(`http://localhost:3000/symph-take-home/error?message=This URL does not exist.`);
       return;
     }
 
     // Check if the URL has expired
     if (shortenedUrl.expiration_date && new Date() > new Date(shortenedUrl.expiration_date)) {
       // Redirect to the frontend error page for "URL expired"
-      res.redirect(`http://localhost:3000/error?message=This URL has expired.`);
+      res.redirect(`http://localhost:3000/symph-take-home/error?message=This URL has expired.`);
       return;
     }
 
@@ -95,9 +95,9 @@ export const redirectUrl = async (req: Request, res: Response): Promise<void> =>
     console.error("Error while redirecting:", error);
 
     if (error instanceof Error) {
-      res.redirect(`http://localhost:3000/error?message=${encodeURIComponent(error.message)}`);
+      res.redirect(`http://localhost:3000/symph-take-home/error?message=${encodeURIComponent(error.message)}`);
     } else {
-      res.redirect(`http://localhost:3000/error?message=An unexpected error occurred.`);
+      res.redirect(`http://localhost:3000/symph-take-home/error?message=An unexpected error occurred.`);
     }
   }
 };
