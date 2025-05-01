@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "homepage": "https://kimtiro.github.io/symph-take-home", 
+  "homepage": "https://kimtiro.github.io/symph-take-home",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,9 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  }
-  ,
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
