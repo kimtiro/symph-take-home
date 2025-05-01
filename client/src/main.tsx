@@ -8,9 +8,9 @@ import ErrorPage from "./pages/ErrorPage";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/symph-take-home/">
       <Routes>
-        <Route path="/symph-take-home/" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/second" element={<SecondPage />} />
         <Route path="/error" element={<ErrorPage />} />
       </Routes>
