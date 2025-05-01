@@ -1,6 +1,6 @@
 {
-  "homepage": "https://github.com/kimtiro/symph-take-home", 
   "name": "client",
+  "homepage": "https://kimtiro.github.io/symph-take-home", 
   "private": true,
   "version": "0.0.0",
   "type": "module",
